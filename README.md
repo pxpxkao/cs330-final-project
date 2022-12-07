@@ -13,6 +13,6 @@ We construct the hybrid models based on the original state-of-the-art models' gi
 
 
 ## Reference
-* An End-to-End Network for Emotion-Cause Pair Extraction[link](https://aaditya-singh.github.io/data/ECPE.pdf), [github](https://github.com/Aaditya-Singh/E2E-ECPE)
+* An End-to-End Network for Emotion-Cause Pair Extraction[[link](https://aaditya-singh.github.io/data/ECPE.pdf)], [github](https://github.com/Aaditya-Singh/E2E-ECPE)
 * Effective Inter-Clause Modeling for End-to-End Emotion-Cause Pair Extraction[[link](https://aclanthology.org/2020.acl-main.289.pdf)], [github](https://github.com/Determined22/Rank-Emotion-Cause)
 * End-to-End Emotion-Cause Pair Extraction based on SlidingWindow Multi-Label Learning[[link](https://aclanthology.org/2020.emnlp-main.290.pdf)], [github](https://github.com/NUSTM/ECPE-MLL)
