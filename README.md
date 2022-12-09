@@ -11,6 +11,11 @@ We construct the hybrid models based on the original state-of-the-art models' gi
 * Run `python main.py`
 * It will train E2E_PExtE+RankCP model
 
+## E2E+Sliding_window
+* Use the same environment as `RankCP+w2v`
+* Run `python E2E_sliding.py`
+* It will train E2E_PExtE+Sliding Window model
+
 
 ## Reference
 * An End-to-End Network for Emotion-Cause Pair Extraction[[link](https://aaditya-singh.github.io/data/ECPE.pdf)], [github](https://github.com/Aaditya-Singh/E2E-ECPE)
