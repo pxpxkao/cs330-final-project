@@ -11,8 +11,8 @@ import time
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 ############################################ FLAGS ############################################################
-train_file_path = './data_combine_eng/clause_keywords.csv'          # clause keyword file
-w2v_file = './data_combine_eng/w2v_200.txt'                         # embedding file
+train_file_path = '../data_combine_eng/clause_keywords.csv'         # clause keyword file
+w2v_file = '../data_combine_eng/w2v_200.txt'                        # embedding file
 embedding_dim = 200                                                 # dimension of word embedding
 embedding_dim_pos = 50                                              # dimension of position embedding
 max_sen_len = 30                                                    # max number of tokens per sentence
@@ -199,9 +199,9 @@ def train_and_eval(Model, pos_cause_criterion, pair_criterion, optimizer):
         train_file_name = 'fold{}_train.txt'.format(fold)
         val_file_name = 'fold{}_val.txt'.format(fold)
         tr_y_position, tr_y_cause, tr_y_pair, tr_x, tr_sen_len, tr_doc_len, tr_distance = load_data_pair(
-                        './data_combine_eng/'+train_file_name, word_id_mapping, max_doc_len, max_sen_len)
+                        '../data_combine_eng/'+train_file_name, word_id_mapping, max_doc_len, max_sen_len)
         val_y_position, val_y_cause, val_y_pair, val_x, val_sen_len, val_doc_len, val_distance = \
-            load_data_pair('./data_combine_eng/'+val_file_name, word_id_mapping, max_doc_len, max_sen_len)
+            load_data_pair('../data_combine_eng/'+val_file_name, word_id_mapping, max_doc_len, max_sen_len)
         max_f1_cause, max_f1_pos, max_f1_pair, max_f1_avg = [-1.] * 4
         #################################### LOOP OVER EPOCHS ####################################
         for epoch in range(1, training_epochs + 1):

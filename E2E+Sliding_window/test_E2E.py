@@ -12,8 +12,8 @@ device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 # device = "cpu"
 
 ############################################ FLAGS ############################################################
-train_file_path = './data_combine_eng/clause_keywords.csv'          # clause keyword file
-w2v_file = './data_combine_eng/w2v_200.txt'                         # embedding file
+train_file_path = '../data_combine_eng/clause_keywords.csv'         # clause keyword file
+w2v_file = '../data_combine_eng/w2v_200.txt'                        # embedding file
 embedding_dim = 200                                                 # dimension of word embedding
 embedding_dim_pos = 50                                              # dimension of position embedding
 max_sen_len = 30                                                    # max number of tokens per sentence
@@ -38,7 +38,7 @@ def test(Model):
         #################################### LOAD TEST DATA ####################################
         test_file_name = 'fold{}_test.txt'.format(fold)
         te_y_position, te_y_cause, te_y_pair, te_x, te_sen_len, te_doc_len, te_distance = load_data_pair(
-            './data_combine_eng/'+test_file_name, word_id_mapping, max_doc_len, max_sen_len)
+            '../data_combine_eng/'+test_file_name, word_id_mapping, max_doc_len, max_sen_len)
         pos_embedding = torch.load("./save/pos_embedding_fold_{}.pth".format(fold))
         Model.load_state_dict(torch.load("./save/E2E-PextE_fold_{}.pth".format(fold)))
         with torch.no_grad():
