@@ -35,7 +35,7 @@ class Config(object):
         self.att_heads = '4'
         self.K = 12
         self.pos_emb_dim = 50
-        self.pairwise_loss = False
+        self.pairwise_loss = True
 
         self.epochs = 15
         self.lr = 1e-5
