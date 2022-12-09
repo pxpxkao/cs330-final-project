@@ -1,4 +1,6 @@
-# cs330-final-project
+# Emotion-Cause Pair Extraction with Hybrid Architecture Analysis
+
+#### cs330-final-project 
 
 We construct the hybrid models based on the original state-of-the-art models' githubs.
 
